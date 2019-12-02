@@ -1,0 +1,7 @@
+.default-checkbox {
+    display: flex;
+}
+
+.default-checkbox .default-checkbox-label {
+    margin-left: 15px;
+}

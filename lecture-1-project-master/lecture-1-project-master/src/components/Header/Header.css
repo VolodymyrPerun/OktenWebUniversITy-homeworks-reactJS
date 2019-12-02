@@ -1,0 +1,21 @@
+
+.default-header {
+    height: 75px;
+    background-color: #282c34;
+    display: flex;
+    align-items: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.default-header .default-header-btn {
+    padding: 10px;
+    font-size: 16px;
+    width: 60px;
+    border-radius: 5px;
+    justify-self: end;
+}
+
+.default-header .default-header-logo {
+    height: 48px;
+}

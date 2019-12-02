@@ -1,20 +1,13 @@
 .App {
-  display: flex;
   text-align: center;
-  justify-content: space-between;
-  flex-direction: column;
 }
 
-.App-logo {
-  height: 48px;
+.App__dark {
+    background-color: #282c34;
 }
 
-.App-header {
-  background-color: #282c34;
-  display: flex;
-  align-items: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.App__dark .App-header {
+    border-bottom: 1px solid #09d3ac;
 }
 
 .App-link {
@@ -58,5 +51,6 @@
 }
 
 .actions-block {
-  margin-bottom: 31px;
+  border: 1px solid #ececec;;
+  padding: 10px 20px;
 }

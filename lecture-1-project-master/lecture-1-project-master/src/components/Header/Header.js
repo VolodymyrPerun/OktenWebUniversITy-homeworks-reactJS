@@ -1,10 +1,11 @@
 import React from 'react';
 import logo from '../../logo.svg';
-import style from './Header.module.css';
+import { ButtonAsClass as Button } from '../Button/Button';
+import './Header.css';
 
-// const CN = 'defaultHeader';
+const CN = 'default-header';
 
-const Header = ({ className, greeting = "test", showLogo,children }) => {
+export const Header = ({ className, greeting = "test", showLogo,children }) => {
 
   const renderMultipleElements = () => {
     return ([
@@ -15,9 +16,9 @@ const Header = ({ className, greeting = "test", showLogo,children }) => {
   };
 
   return (
-    <header className={`${style.defaultHeader} ${className}`}>
+    <header className={`${CN} ${className}`}>
       { showLogo && (
-        <img src={logo} className="App-logo" alt="logo"/>
+        <img src={logo} className={`${CN}-logo`} alt="logo"/>
       )
       }
 
@@ -25,8 +26,7 @@ const Header = ({ className, greeting = "test", showLogo,children }) => {
 
       {renderMultipleElements()}
       {children}
+      <Button label="Login" className={`${CN}-btn`}/>
     </header>
   );
 };
-
-export default Header;
