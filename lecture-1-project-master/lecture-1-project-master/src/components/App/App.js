@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { people } from '../../constants/people';
-
-import { Header  } from '../Header/Header';
-
 import './App.css';
+import  Header   from '../Header/Header';
+import Footer from "../Footer/Footer";
 
 function renderPeopleList() {
   return people.map(person => {
@@ -89,6 +88,9 @@ class AppTheReal extends Component {
         }
 
         {renderBtn()}
+
+
+        <Footer/>
       </div>
     );
   }

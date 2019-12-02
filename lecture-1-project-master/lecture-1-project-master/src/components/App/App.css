@@ -1,5 +1,8 @@
 .App {
+  display: flex;
   text-align: center;
+  justify-content: space-between;
+  flex-direction: column;
 }
 
 .App-logo {
@@ -52,4 +55,8 @@
     width: 100px;
     height: 2px;
     background-color: lightseagreen;
+}
+
+.actions-block {
+  margin-bottom: 31px;
 }

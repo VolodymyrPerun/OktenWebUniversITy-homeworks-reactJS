@@ -11,7 +11,13 @@ export const people = [{
   firstName: 'Captain',
   lastName: 'America',
   avatar: 'https://p7.hiclipart.com/preview/33/348/952/captain-america-s-shield-crossbones-logo-captain-america.jpg'
-}];
+},
+  {
+  firstName: 'Batman',
+    lastName: 'Man',
+    address: 'Gotham',
+    avatar: 'https://cdn.icon-icons.com/icons2/1736/PNG/512/4043232-avatar-batman-comics-hero_113278.png'
+},];
 
 const person = {
   firstName: 'Iron',

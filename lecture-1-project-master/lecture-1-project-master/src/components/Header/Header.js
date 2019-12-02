@@ -1,10 +1,10 @@
 import React from 'react';
 import logo from '../../logo.svg';
-import './Header.css';
+import style from './Header.module.css';
 
-const CN = 'default-header';
+// const CN = 'defaultHeader';
 
-export const Header = ({ className, greeting = "test", showLogo,children }) => {
+const Header = ({ className, greeting = "test", showLogo,children }) => {
 
   const renderMultipleElements = () => {
     return ([
@@ -15,7 +15,7 @@ export const Header = ({ className, greeting = "test", showLogo,children }) => {
   };
 
   return (
-    <header className={`${CN} ${className}`}>
+    <header className={`${style.defaultHeader} ${className}`}>
       { showLogo && (
         <img src={logo} className="App-logo" alt="logo"/>
       )
@@ -28,3 +28,5 @@ export const Header = ({ className, greeting = "test", showLogo,children }) => {
     </header>
   );
 };
+
+export default Header;
