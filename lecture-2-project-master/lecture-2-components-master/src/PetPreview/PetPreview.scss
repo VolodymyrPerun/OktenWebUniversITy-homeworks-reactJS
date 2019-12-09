@@ -1,0 +1,19 @@
+.pet-preview {
+  background-color: lightgray;
+  border: 1px solid darkgray;
+  border-radius: 5px;
+
+  width: 500px;
+  height: 350px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin: 30px;
+
+  &__image {
+    max-height: 100%;
+    max-width: 100%;
+  }
+}

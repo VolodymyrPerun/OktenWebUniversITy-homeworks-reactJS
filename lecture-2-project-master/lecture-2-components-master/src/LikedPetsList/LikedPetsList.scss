@@ -1,0 +1,19 @@
+.liked-pets-list {
+  width: 100px;
+  max-height: calc(100vh - 75px);
+  margin-right: 15px;
+
+  display: flex;
+  flex-direction: column;
+
+  overflow-y: auto;
+
+  img {
+    width: 100px;
+    margin: 5px 0;
+  }
+
+  &__label {
+    color: blue;
+  }
+}

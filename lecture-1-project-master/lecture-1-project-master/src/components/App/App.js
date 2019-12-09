@@ -6,7 +6,6 @@ import Checkbox from '../Checkbox/Checkbox';
 import { Input } from '../Input/Input';
 
 import './App.css';
-import Footer from "../Footer/Footer";
 
 const CN = 'App';
 
@@ -114,8 +113,6 @@ class AppTheReal extends Component {
         <div className="divider"/>
         <ul className="list">{renderPeopleList()}</ul>
         {this.renderActionsBlock()}
-
-        <Footer/>
       </div>
     );
   }
